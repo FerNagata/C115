@@ -1,10 +1,9 @@
 from socket import *
-import json
 import time
 mensagem = " conceitos e tecnologias para dispositivos conectados "
 
 serverName = 'localhost'
-serverPort = 12004
+serverPort = 12005
 clientSocket = socket( AF_INET , SOCK_STREAM )
 clientSocket.connect(( serverName , serverPort))
 
@@ -20,3 +19,4 @@ def closeConection():
     time.sleep(2)  # Aguarda um segundo entre mensagens
     clientSocket.close()
     
+

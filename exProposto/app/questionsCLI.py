@@ -20,12 +20,17 @@ while flag:
 
     if op == 1:
         nome = input("Digite seu nome: ")
+        print('----------------------------------')
+
         score = 0
         for i in range(1,4):
             id = {'id': i}
             id = json.dumps(id)
             resposta = sendToServer(id)
             resposta = json.loads(resposta)
+
+            question = resposta['question']
+            print(question)
             option = (resposta['option1'], resposta['option2'], resposta['option3'], resposta['option4'])
             for index, op in enumerate(option):
                 print(f'{index+1} - {op}')

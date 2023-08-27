@@ -22,3 +22,5 @@ VALUES ('Quantos continentes existem no mundo?', '4', '5', '6', '7', 3);
 
 INSERT INTO questions (question, option1, option2, option3, option4, answer)
 VALUES ('Qual o país com a maior população?', 'Índia', 'China', 'Paquistão', 'EUA', 1);
+
+

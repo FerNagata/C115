@@ -2,7 +2,7 @@ from socket import *
 from database import *
 import json
 
-serverPort = 12004
+serverPort = 12005
 serverSocket = socket(AF_INET , SOCK_STREAM)
 # atribui a porta ao socket criado
 serverSocket.bind(('localhost', serverPort ))
